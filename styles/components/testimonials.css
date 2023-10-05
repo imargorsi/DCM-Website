@@ -1,0 +1,45 @@
+.testimonials {
+  padding-top: 5rem;
+}
+
+.testimonials__title {
+  color: var(--clr-white);
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.testimonial__slider {
+  padding: 10rem 1rem;
+  display: flex;
+}
+
+.testimonial__1 {
+  color: var(--clr-white);
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+}
+
+.testimonial__slide-1 {
+  width: 80%;
+}
+
+.testimonial__slide-2 {
+  align-self: flex-end;
+  width: 20%;
+}
+
+.testimonial__about {
+  color: var(--clr-white);
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  flex: 1;
+}
+
+.testimonial__company {
+  color: var(--clr-white);
+  font-weight: 100;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,85 @@
+/* for 2xl  */
+/* @media (max-width: 1536px) {} */
+
+/* for xl   */
+/* @media (max-width: 1280px) {} */
+
+/* for large */
+/* @media (max-width: 1024px) {} */
+
+/* for medium */
+/* @media (max-width: 768px) {} */
+
+/* for small */
+/* @media (max-width: 640px) {} */
+
+/* for extra small */
+/* @media (max-width: 475px) {} */
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  font-family: "General Sans", sans-serif;
+  text-decoration: none;
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  padding: 0.5em 1.2em;
+  border-radius: 6px;
+  box-shadow: 0 10px 20px rgb(255, 116, 38, 0.5),
+    0 6px 6px rgb(255, 116, 38, 0.5), 0 0 100px -10px var(--clr-orange);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgb(255, 116, 38, 0.25),
+    0 10px 10px rgb(255, 116, 38, 0.22), 0 0 120px -10px var(--clr-orange);
+}
+
+.container {
+  max-width: 1536px;
+  margin-inline: auto;
+  padding-inline: 0.5rem;
+}
+
+/* for 2xl  */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* for xl   */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* for large */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* for medium */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* for small */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* for extra small */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}

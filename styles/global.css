@@ -1,0 +1,70 @@
+/* fonts */
+
+/* font-family: "General Sans", sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* orange rgb value 	rgb(255, 116, 38) */
+
+:root {
+  --clr-black: #0a0a0a;
+  --clr-orange: #ff7426;
+  --clr-white: #ffffff;
+  --clr-grey: #6b7280;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.light-mode {
+  --clr-white: #0a0a0a;
+  --clr-black: #ffffff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--clr-black);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* Sroll Bar */
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px var(--clr-white);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-orange);
+  outline: 1px solid var(--clr-orange);
+}

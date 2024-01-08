@@ -1,0 +1,198 @@
+.digitalmarketing__title span {
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10rem;
+  font-weight: 800;
+}
+
+.digitalmarketing__title {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.marketing__services {
+  position: relative;
+}
+
+.marketing__features {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.featuress__icon {
+  width: 5rem;
+  fill: var(--clr-orange);
+  position: absolute;
+  top: -18px;
+  right: 510px;
+}
+
+.features__tagline {
+  color: var(--clr-white);
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.marketingservices__title {
+  padding-top: 1.5rem;
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 200;
+}
+
+.marketingservices__title2 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--clr-orange);
+}
+
+.marketing__services_options {
+  padding: 100px 0;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.marketing__services_slides {
+  width: 25%;
+  background-color: transparent;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--clr-white);
+  transition: transform 1s, background-color 1s;
+}
+
+.marketing__services_slides:hover {
+  background-color: var(--clr-orange);
+  transform: translateY(-20px);
+}
+
+.marketing__services_slidesicon {
+  width: 4rem;
+  fill: var(--clr-white);
+}
+
+.marketing__slides__title {
+  color: var(--clr-white);
+  font-size: 1.8rem;
+}
+
+.marketing__slides__desc {
+  color: var(--clr-white);
+}
+
+.marketing__slides_btn {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.marketing__slides_btnicon {
+  width: 1.2rem;
+  fill: var(--clr-white);
+}
+
+.marketing__slides_btnbtn {
+  font-size: 1.4rem;
+  color: var(--clr-white);
+}
+
+/* // features section ends */
+
+/* Web Traffic Section Starts */
+
+.webtraffic__submit {
+  padding: 1rem;
+  border-radius: 15px;
+  border: 2px solid var(--clr-orange);
+  width: 60%;
+}
+
+.webtraffic__submit:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.web__traffic__form {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn__webtraffic {
+  width: 20%;
+  border-radius: 15px;
+}
+
+.btn__slides {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+@media (max-width: 475px) {
+  .services___hero {
+    margin-bottom: 5rem;
+  }
+  .digitalmarketing__title span {
+    font-size: 4rem;
+  }
+
+  .digitalmarketing__title {
+    font-size: 2rem;
+  }
+  .featuress__icon {
+    width: 4rem;
+    fill: var(--clr-orange);
+    position: absolute;
+    top: -80px;
+    right: 190px;
+  }
+
+  .features__tagline {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .marketingservices__title {
+    font-size: 1rem;
+  }
+
+  .marketingservices__title2 {
+    font-size: 2.1rem;
+  }
+
+  .marketing__services_options {
+    padding: 30px 10px;
+
+    flex-direction: column;
+  }
+
+  .marketing__services_slides {
+    width: 100%;
+    background-color: transparent;
+    padding: 2rem;
+  }
+
+  /* // features section ends */
+
+  .webtraffic__submit {
+    width: 100%;
+  }
+  .web__traffic__form {
+    padding-inline: 1rem;
+  }
+
+  .web__traffic__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn__webtraffic {
+    width: 100%;
+  }
+}

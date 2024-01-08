@@ -1,0 +1,117 @@
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.uxdesign__hero__heading2 {
+  font-size: 5rem;
+  background-image: url("https://images.unsplash.com/photo-1506792006437-256b665541e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.uxdesign__hero__heading {
+  animation: myAnim 4s ease 0s infinite normal forwards;
+}
+
+.uxdesign__about {
+  padding-top: 100px;
+  margin-bottom: 10rem;
+  display: flex;
+  gap: 1.5rem;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-orange);
+  box-shadow: 0 4px 28px rgb(255, 116, 38, 0.25),
+    0 10px 10px rgb(255, 116, 38, 0.22), 0 0 120px -10px var(--clr-orange);
+}
+
+.uxdesign__about__subheaading {
+  color: var(--clr-black);
+  font-size: 1.3rem;
+}
+
+.uxdesign__about__heaading {
+  color: var(--clr-white);
+  font-size: 3.1rem;
+}
+
+.uxdesign__about__img {
+  flex-basis: 50%;
+}
+
+.uxdesign__about__imgs {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+.uxdesign__about__desc {
+  color: var(--clr-white);
+  font-size: 1.8rem;
+  flex-basis: 50%;
+}
+
+@media (max-width: 475px) {
+  .uxdesign__hero__heading2 {
+    font-size: 2.5rem;
+    background-image: url("https://images.unsplash.com/photo-1506792006437-256b665541e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .uxdesign__hero__heading {
+    animation: none;
+  }
+
+  .uxdesign__about {
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    gap: 1.5rem;
+    border-radius: 0px;
+
+    align-items: start;
+  }
+
+  .uxdesign__about__subheaading {
+    font-size: 1rem;
+    padding-inline: 2rem;
+  }
+
+  .uxdesign__about__heaading {
+    font-size: 2rem;
+    padding-inline: 1.5rem;
+  }
+
+  .uxdesign__about__imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+  }
+
+  .uxdesign__about__desc {
+    display: none;
+  }
+}

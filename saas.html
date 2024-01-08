@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/modern-normalize.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/mobile-nav.css" />
+    <link rel="stylesheet" href="styles/about__page.css" />
+    <link rel="stylesheet" href="styles/home/contact.css" />
+    <link rel="stylesheet" href="styles/services/saas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/utlise.css" />
+  </head>
+  <body>
+    <!-- Header Section Starts -->
+    <div class="header container">
+      <div class="header__logo">
+        <a href="index.html">
+          <img loading="lazy" id="logo" src="images/DCM COLOR.png" alt=""
+        /></a>
+      </div>
+      <div class="header__menu">
+        <nav>
+          <ul class="header__navbar">
+            <li>
+              <a class="header__nav__items" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="header__nav__items" href="about.html">About</a>
+            </li>
+            <li>
+              <a class="header__nav__items" href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a class="header__nav__items" href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="header__nav__items" href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a class="header__line" href=""></a>
+            </li>
+            <button id="darkmode__switcher" class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+
+            <button class="contact__btn btn">
+              <a href="contact.html" class="btn__href">Let's Connect!</a>
+            </button>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__mobile">
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Header Section Ends -->
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a class="mobile-nav__link" href="index.html">Home</a></li>
+          <li><a class="mobile-nav__link" href="about.html">About</a></li>
+
+          <li>
+            <a class="mobile-nav__link" href="services.html">Services</a>
+          </li>
+
+          <li>
+            <a class="mobile-nav__link" href="portfolio.html">Portfolio</a>
+          </li>
+
+          <li><a class="mobile-nav__link" href="contact.html">Contact</a></li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="darkmode__switcher" class="mobile-nav__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="contact.html"
+              >Let's Connect!
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Mobile Navigation Ends -->
+
+    <div class="aboutpage__hero container saas__background">
+      <div class="aboutpage___herocontent">
+        <h4 class="herocontent__tagline">
+          Revolutionize Your Business Management
+        </h4>
+        <h2 class="herocontent__heading">
+          Your Key to Data-Driven Decision-Making
+        </h2>
+        <p class="herocontent__desc">
+          Leverage data-driven insights with our SaaS CRM platform, empowering
+          you to make informed decisions and achieve business success.
+          Seamlessly integrate our SaaS CRM into your operations for
+          comprehensive sales and customer data management.
+        </p>
+        <button class="btn aboutpage__herobtn">
+          <a class="btn__href" href="contact.html">Let's Connect!</a>
+        </button>
+      </div>
+
+      <div class="aboutpage___heroimg">
+        <dotlottie-player
+          src="https://lottie.host/64e504ca-6856-4079-bc58-063f51454cd6/poxtGFVt7E.json"
+          background="transparent"
+          speed="1"
+          class="file"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
+    </div>
+
+    <div class="saas__features container">
+      <div class="features__1">
+        <h2 class="features__1__heading">
+          How Our CRM Can Empowers<br />
+          Your Business?
+        </h2>
+        <p class="features__1__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae
+          doloribus perspiciatis impedit beatae omnis vitae ducimus veniam,
+          libero dolore quasi magni ab eveniet expedita quibusdam deleniti
+          cupiditate? Vero, fugit!
+        </p>
+      </div>
+      <div class="features__2">
+        <div class="features__boxes">
+          <div class="icon__box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="features__boxes__icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+              />
+            </svg>
+          </div>
+
+          <h2 class="features__box__heading">Dynamic Tools</h2>
+          <p class="features__box__desc">
+            Build and configure your own promptsand tools dynamically for a
+            personalized AI experince.
+          </p>
+        </div>
+        <div class="features__boxes">
+          <div class="icon__box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="features__boxes__icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+              />
+            </svg>
+          </div>
+
+          <h2 class="features__box__heading">Easy Scalability</h2>
+          <p class="features__box__desc">
+            We constantly upgrade our platform for the latest AI tools and
+            features that can help you.
+          </p>
+        </div>
+        <div class="features__boxes">
+          <div class="icon__box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="features__boxes__icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z"
+              />
+            </svg>
+          </div>
+
+          <h2 class="features__box__heading">Collaborative Space</h2>
+          <p class="features__box__desc">
+            Your customers can from teams and shared workspaces to collaborate
+            seamlessly.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="saas__pricing container">
+      <h1 class="pricing__heading">Customized Pricing for You</h1>
+      <div class="yearselector">
+        <h2 class="selectorchouice selectoractive" id="monthly">Monthly</h2>
+        <h2 class="selectorchouice" id="yearly">
+          Yearly <span>Get 2.5 Months Free</span>
+        </h2>
+      </div>
+      <div class="pricing__options">
+        <div class="pricing__section1">
+          <div class="plan__title">
+            <h3 class="plan__title__pricing">Standard plan</h3>
+          </div>
+          <div class="plan-pricing">
+            <h2 class="plan__price" id="Standard__price">$297</h2>
+            <p class="price__month">/month</p>
+          </div>
+          <p class="plan__saving">$99 Saved Every Month</p>
+          <p class="plan__desc">Ideal for small teams and startups</p>
+          <hr class="line__pricing" />
+          <ul class="section__part__2__deatils">
+            <li class="details">Up to 11 user accounts included.</li>
+            <li class="details">Up to 11 user accounts included.</li>
+            <li class="details">Missed Call Automated Follow-up.</li>
+            <li class="details">Database / Customer Reactivation.</li>
+            <li class="details">Business Automation.</li>
+            <li class="details">
+              Omnichannel Inbox (SMS/Text, Email, Calls, Social: Facebook,
+              Instagram, WhatsApp, Slack, and more!)
+            </li>
+            <li class="details">Website Chat Widget (Sales Generator)</li>
+            <li class="details">Reputation Management System</li>
+            <li class="details">Calendar / Appointment System</li>
+            <li class="details">Surveys & Forms</li>
+            <li class="details">Business, Sales, and Agent Reporting</li>
+            <li class="details">
+              Marketing Tools That Supercharge Growth (Email, SMS, Social,
+              Voicemail)
+            </li>
+          </ul>
+          <button class="btn pricing__btn">
+            <a href="contact.html" class="btn__href"
+              >Start Your Free Trial Now!</a
+            >
+          </button>
+        </div>
+
+        <div class="pricing__section1 section-bg">
+          <div class="plan__title">
+            <h3 class="plan__title__pricing">Advanced plan</h3>
+          </div>
+          <div class="plan-pricing">
+            <h2 class="plan__price" id="adv__price">$497</h2>
+            <p class="price__month">/month</p>
+          </div>
+          <p class="plan__saving" style="color: #fff">$165 Saved Every Month</p>
+          <p class="plan__desc">Growing teams up to 20 users</p>
+          <hr class="line__pricing" />
+          <ul class="section__part__2__deatils">
+            <p class="section2__desc">Everything in Standard plan plus....</p>
+            <li class="details">Access Client Success Advisor</li>
+            <li class="details">Unlimited SZN users included</li>
+            <li class="details">Easily Build Websites, Blogs & CMS</li>
+            <li class="details">Social Media Planner & Scheduling</li>
+            <li class="details">Referral & Affiliate Management Tools</li>
+            <li class="details">
+              Offer Free/Paid Memberships & Courses to Clients and Staff,
+              increase Lead Gen & Sales
+            </li>
+            <li class="details">Advanced Business Automations</li>
+            <li class="details">Access Zapier and 2,000+ Integrations</li>
+            <li class="details">Send Invoices, Proposals, and Contracts</li>
+            <li class="details">Securely Collect Payments</li>
+            <li class="details">Done-For-You Business Setup Available</li>
+            <li class="details">Whitelabel Access</li>
+            <li class="details">Priority Support</li>
+            <li class="details">In-Person & Video Support</li>
+          </ul>
+          <button class="btn pricing__btn">
+            <a href="contact.html" class="btn__href"
+              >Start Your Free Trial Now!</a
+            >
+          </button>
+        </div>
+
+        <div class="pricing__section1">
+          <div class="plan__title">
+            <h3 class="plan__title__pricing">Elite plan</h3>
+          </div>
+          <div class="plan-pricing">
+            <h2 class="plan__price" id="elite__price">$997</h2>
+            <p class="price__month">/month</p>
+          </div>
+          <p class="plan__saving">$199 Saved Every Month</p>
+          <p class="plan__desc">Businesses looking to scale</p>
+          <hr class="line__pricing" />
+          <ul class="section__part__2__deatils">
+            <p class="section2__desc">Everything in Advanced plan plus....</p>
+            <li class="details">Business Development Advisor</li>
+            <li class="details">
+              Facebook Marketing Platform (Create, Launch, and Optimize Ads)
+            </li>
+            <li class="details">
+              Save on average, over $3,173/month with our Powerful Facebook
+              Marketing AI Tools
+            </li>
+            <li class="details">Access Winning Social Media Ad Templates</li>
+            <li class="details">Premium Website Chat Widget Upgrade</li>
+            <li class="details">IDX Integration (for Realtors & Agents)</li>
+            <li class="details">Native IDX Property Listing Management</li>
+            <li class="details">Audit log and data history</li>
+            <li class="details">HIPA Compliance Certified (Healthcare)</li>
+            <li class="details">API Access & Support</li>
+            <li class="details">First-Class Support</li>
+            <li class="details">Custom Feature Builds</li>
+          </ul>
+          <button class="btn pricing__btn">
+            <a href="contact.html" class="btn__href"
+              >Start Your Free Trial Now!</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="contact__1">
+        <h1 class="contact__title saas__title">
+          Your business is ready to be kickstarted with our AI-powered Smart CRM
+          solutions.
+        </h1>
+        <p class="saas__contact_desc">
+          Get Started with our free trial, no commitment required.
+        </p>
+      </div>
+      <div class="contact__2">
+        <button class="contact__button">
+          <a href="contact.html" class="btn__href">Start Now!</a>
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

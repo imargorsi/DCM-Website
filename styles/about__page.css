@@ -1,0 +1,173 @@
+@keyframes slideinDown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideUp {
+  to {
+    transform: scale(120%);
+  }
+
+  from {
+    transform: scale(100%);
+  }
+}
+
+.aboutpage__hero {
+  padding: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.file {
+  width: 40rem;
+  height: 40rem;
+}
+
+.herocontent__tagline {
+  color: var(--clr-white);
+  font-weight: 300;
+  font-size: 1.5rem;
+  animation: slideinDown 1s ease-in 2;
+}
+
+.herocontent__heading {
+  color: var(--clr-white);
+  font-size: 3.9rem;
+  font-weight: 800;
+  line-height: 4.5rem;
+}
+
+.herocontent__desc {
+  color: var(--clr-white);
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.btn__href {
+  text-decoration: none;
+  color: var(--clr-black);
+}
+
+.aboutpage___herocontent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.aboutpage__herobtn {
+  width: 35%;
+  animation: slideUp 2s linear 1s;
+}
+
+.partners__heading {
+  font-size: 3rem;
+  color: var(--clr-white);
+}
+
+.aboutpage___partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem 0rem;
+}
+
+.partners__subheading {
+  color: var(--clr-white);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.partners__banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+  padding-inline: 10rem;
+}
+
+.partners_logo {
+  fill: var(--clr-grey);
+  width: 3.6rem;
+  transition: transform 0.3s, fill 0.3s;
+}
+
+.partners_logo:hover {
+  fill: var(--clr-white);
+  transform: scale(110%);
+}
+
+@media (max-width: 475px) {
+  .aboutpage__hero {
+    padding: 5rem;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .aboutpage__whyus {
+    flex-direction: column;
+  }
+  .file {
+    width: 20rem;
+    height: 100%;
+  }
+
+  .herocontent__tagline {
+    font-size: 1rem;
+    padding-inline: 1rem;
+  }
+
+  .herocontent__heading {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    padding-inline: 1rem;
+  }
+
+  .herocontent__desc {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    padding-inline: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .aboutpage___herocontent {
+    gap: 1rem;
+  }
+
+  .aboutpage__herobtn {
+    width: 55%;
+    margin-inline: 1rem;
+  }
+
+  .partners__heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .aboutpage___partners {
+    gap: 2rem;
+    padding: 1rem 4rem;
+  }
+
+  .partners__banner {
+    padding: 0rem;
+  }
+
+  .partners_logo {
+    width: 2rem;
+  }
+}
